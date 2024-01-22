@@ -6,9 +6,18 @@ Official implementation of [&#39;PA-SAM: Prompt Adapter SAM for High-quality Ima
 
 The Segment Anything Model (SAM) has exhibited outstanding performance in various image segmentation tasks. Despite being trained with over a billion masks, SAM faces challenges in mask prediction quality in numerous scenarios, especially in real-world contexts. In this paper, we introduce a novel prompt-driven adapter into SAM, namely Prompt Adapter Segment Anything Model (PA-SAM), aiming to enhance the segmentation mask quality of the original SAM. By exclusively training the prompt adapter, PA-SAM extracts detailed information from images and optimizes the mask decoder feature at both sparse and dense prompt levels, improving the segmentation performance of SAM to produce high-quality masks. Experimental results demonstrate that our PA-SAM outperforms other SAM-based methods in high-quality, zero-shot, and open-set segmentation.
 
-<img width="1096" alt="image" src='figs/pa-sam-framework.jpg'>
+<p align="center">
+  <img width="800" alt="image" src='figs/pa-sam-framework.jpg'>
+</p>
+<br>
 
-<img width="1096" alt="image" src='figs/prompt-adapter.jpg'>
+The architecture of the prompt adapter, which achieves adaptive detail enhancement using a consistent representation module (CRM) and token-to-image attention, and implements hard point mining using the Gumbel top-k point sampler.
+
+<br>
+<p align="center">
+  <img width="700" alt="image" src='figs/prompt-adapter.jpg'>
+</p>
+
 
 ## Setup and Installation
 
