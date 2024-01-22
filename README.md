@@ -97,7 +97,7 @@ python -m torch.distributed.launch --nproc_per_node=1 train.py --checkpoint ./pr
 @article{xie2024pasam,
   title={PA-SAM: Prompt Adapter SAM for High-quality Image Segmentation},
   author={Xie, Zhaozhi and Guan, Bochen and Jiang, Weihao and Yi, Muyang and Ding, Yue and Lu, Hongtao and Zhang, Lei},
-  journal={arXiv preprint arXiv:2306.01567},
+  journal={arXiv preprint arXiv:},
   year={2024}
 }
 ```
