@@ -1,6 +1,6 @@
 # PA-SAM: Prompt Adapter SAM for High-quality Image Segmentation
 
-Official implementation of [&#39;PA-SAM: Prompt Adapter SAM for High-quality Image Segmentation&#39;](https://arxiv.org/abs/2306.01567).
+Official implementation of [&#39;PA-SAM: Prompt Adapter SAM for High-quality Image Segmentation&#39;](https://arxiv.org/abs/2306.0156).
 
 ## Introduction
 
