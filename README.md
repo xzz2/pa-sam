@@ -27,7 +27,7 @@ The architecture of the prompt adapter, which achieves adaptive detail enhanceme
 
 <!-- 
 <br>
-<img width="1000" alt="image" src='figs/prompt-adapter.jpg'>
+<img width="1000" alt="image" src='figs/vis.png'>
 -->
 
 
