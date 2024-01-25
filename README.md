@@ -25,10 +25,10 @@ The architecture of the prompt adapter, which achieves adaptive detail enhanceme
 | HQ-SAM | 78.6     | 70.4      | 94.8       | 90.1        | 93.6       | 86.9        | 89.5             | 79.9              | 89.1          | 81.8           |
 | PA-SAM | 81.5     | 73.9      | 95.8       | 92.1        | 94.6       | 88.0        | 92.7             | 84.0              | 91.2          | 84.5           |
 
-<!-- 
+
 <br>
-<img width="1000" alt="image" src='figs/vis.png'>
--->
+<img width="800" alt="image" src='figs/vis.png'>
+
 
 
 ## Setup and Installation
