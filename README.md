@@ -18,6 +18,7 @@ The architecture of the prompt adapter, which achieves adaptive detail enhanceme
   <img width="600" alt="image" src='figs/prompt-adapter.jpg'>
 </p>
 
+## PA-SAM vs HQ-SAM
 
 ## Setup and Installation
 
