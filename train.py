@@ -47,7 +47,7 @@ def get_args_parser():
     parser.add_argument('--learning_rate', default=1e-3, type=float)
     parser.add_argument('--start_epoch', default=0, type=int)
     parser.add_argument('--lr_drop_epoch', default=10, type=int)
-    parser.add_argument('--max_epoch_num', default=20, type=int)
+    parser.add_argument('--max_epoch_num', default=21, type=int)
     parser.add_argument('--input_size', default=[1024,1024], type=list)
     parser.add_argument('--batch_size_train', default=4, type=int)
     parser.add_argument('--batch_size_valid', default=1, type=int)
@@ -281,7 +281,7 @@ def train(args, net, optimizer, train_dataloaders, valid_dataloaders, lr_schedul
     if misc.is_main_process():
         sam_ckpt = torch.load(args.checkpoint)
         pa_decoder = torch.load(args.output + model_name)
-        sam_ckpt.update({k.replace('mask_decoder', 'mask_decoder_ori'): v for k, v in original_dict.items() if 'mask_decoder' in k})
+        sam_ckpt.update({k.replace('mask_decoder', 'mask_decoder_ori'): v for k, v in sam_ckpt.items() if 'mask_decoder' in k})
         for key in pa_decoder.keys():
             sam_key = 'mask_decoder.'+key
             sam_ckpt[sam_key] = pa_decoder[key]
