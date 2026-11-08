@@ -280,7 +280,7 @@ def train(args, net, optimizer, train_dataloaders, valid_dataloaders, lr_schedul
     # merge sam and pa_decoder
     if misc.is_main_process():
         sam_ckpt = torch.load(args.checkpoint)
-        pa_decoder = torch.load(args.output + model_name)
+        pa_decoder = torch.load(args.output + model_name, weights_only=True)
         sam_ckpt.update({k.replace('mask_decoder', 'mask_decoder_ori'): v for k, v in sam_ckpt.items() if 'mask_decoder' in k})
         for key in pa_decoder.keys():
             sam_key = 'mask_decoder.'+key
